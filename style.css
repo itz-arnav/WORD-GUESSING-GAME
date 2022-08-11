@@ -1,0 +1,118 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    line-height: 15vh;
+    background-color: #20bf6b;
+}
+
+h1{
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    font-size: 1.8rem;
+    letter-spacing: 15px;
+    text-shadow: 0 1px 0 #efefef,
+                 0 2px 0 #efefef,
+                 0 3px 0 #efefef,
+                 0 4px 0 #efefef,
+                 0 30px 5px rgba(0,0,0,0.1);
+}
+
+section{
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7bed9f;
+}
+
+.gamearea{
+    width: 50%;
+    height: 400px;
+    padding: 20px 0;
+    background-color: #2ed573;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Carter One', cursive;
+    box-shadow: 0 8px 6px -6px black;
+}
+
+h3{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+input{
+    width: 40%;
+    padding: 15px 0;
+    text-align: center;
+    margin: 2rem 0;
+    color: black;
+    background-color: #dff9fb;
+    border-radius: 25px;
+    font-size: 1.1rem;
+}
+
+.btn{
+    padding: 10px 30px;
+    background-color: #000;
+    color:#21ebff;
+    transition: 0.5s;
+    border-radius: 2px;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    filter: hue-rotate(270deg);
+}
+
+a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #21ebff;
+    border-left: 2px solid #21ebff;
+    transition:0.5s;
+}
+
+a:hover:before{
+    width: 100%;
+    height: 100%;
+}
+a:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid #21ebff;
+    border-right: 2px solid #21ebff;
+    transition:0.5s;
+}
+a:hover:after{
+    width: 100%;
+    height: 100%;
+}
+
+a:hover{
+    background-color:#21ebff;
+    color: #111;
+    box-shadow: 0 0 50px #21ebff;
+    transition-delay: 0.2s;
+}
+
+.hidden{
+    display: none;
+}
